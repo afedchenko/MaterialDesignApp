@@ -7,9 +7,10 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Text Edit</string>
+    <string name="menu_home">Edit text</string>
     <string name="menu_gallery">Snack Bar</string>
     <string name="menu_slideshow">Bottom Sheet</string>
 
     <string name="home_second">Home Second</string>
+    <string name="edit_text_hint">Some text</string>
 </resources>
