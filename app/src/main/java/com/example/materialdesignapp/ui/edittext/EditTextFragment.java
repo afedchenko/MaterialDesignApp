@@ -1,4 +1,4 @@
-package com.example.materialdesignapp.ui.home;
+package com.example.materialdesignapp.ui.edittext;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,15 +14,15 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.materialdesignapp.R;
 
-public class HomeFragment extends Fragment {
+public class EditTextFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private EditTextViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+                ViewModelProviders.of(this).get(EditTextViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_edit_text, container, false);
         final TextView textView = root.findViewById(R.id.edit_text);
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
