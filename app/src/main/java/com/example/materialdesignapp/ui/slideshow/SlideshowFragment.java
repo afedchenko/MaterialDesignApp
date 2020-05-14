@@ -15,16 +15,15 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 public class SlideshowFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    //private SlideshowViewModel slideshowViewModel;
     private static final String TAG = "BottomActivity";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
+        //slideshowViewModel = ViewModelProviders.of(this).get(SlideshowViewModel.class);
         View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
         final View llBottomSheet = root.findViewById(R.id.bottom_sheet);
-        
+
         // init the bottom sheet behavior
         BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(llBottomSheet);
 
