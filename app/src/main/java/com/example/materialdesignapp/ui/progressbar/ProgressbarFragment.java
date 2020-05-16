@@ -1,4 +1,4 @@
-package com.example.materialdesignapp.ui.buttons;
+package com.example.materialdesignapp.ui.progressbar.progressbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ import com.example.materialdesignapp.R;
 import com.example.materialdesignapp.ToolbarBackActivity;
 import com.example.materialdesignapp.ui.edittext.EditTextViewModel;
 
-public class ButtonsFragment extends Fragment {
+public class ProgressbarFragment extends Fragment {
 
     private EditTextViewModel buttonsViewModel;
 
@@ -29,7 +29,7 @@ public class ButtonsFragment extends Fragment {
         buttonForToolbarActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ButtonsFragment.this.startActivity(new Intent(ButtonsFragment.this.getContext(), ToolbarBackActivity.class));
+                ProgressbarFragment.this.startActivity(new Intent(ProgressbarFragment.this.getContext(), ToolbarBackActivity.class));
             }
         });
 
