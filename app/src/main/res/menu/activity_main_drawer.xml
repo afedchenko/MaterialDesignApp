@@ -20,5 +20,9 @@
             android:id="@+id/nav_buttons"
             android:icon="@drawable/ic_menu_buttons"
             android:title="@string/menu_buttons" />
+        <item
+            android:id="@+id/nav_progress"
+            android:icon="@drawable/ic_menu_progress"
+            android:title="@string/menu_progress" />
     </group>
 </menu>

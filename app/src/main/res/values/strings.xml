@@ -1,4 +1,6 @@
 <resources>
+
+    <!--Тексты в drawer activity-->
     <string name="app_name">Material Design App</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -7,15 +9,25 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!--Пункты меню-->
     <string name="menu_edit_text">Edit text</string>
     <string name="menu_snack_bar">FAB and SnackBar</string>
     <string name="menu_bottom_sheet">Bottom Sheet</string>
     <string name="menu_buttons">Buttons</string>
+    <string name="menu_progress">ProgressBar</string>
 
+    <!--Тексты на разных view-->
     <string name="home_second">Home Second</string>
     <string name="edit_text_hint">Some text</string>
     <string name="bottom_sheet_text">Потяни вверх</string>
-    <string name="button_text">BUTTON</string>
     <string name="flat_button_text_view">Flat buttons example</string>
     <string name="raised_button_text_view">Raised buttons example</string>
+    <string name="activity_toolbar_text_view">Окно с кнопкой \"назад\""</string>
+
+    <!--Тексты на кнопках-->
+    <string name="button_text">BUTTON</string>
+    <string name="button_open_activity">OPEN NEW ACTIVITY</string>
+    <string name="button_show_progress">SHOW</string>
+    <string name="button_hide_progress">HIDE</string>
+
 </resources>
