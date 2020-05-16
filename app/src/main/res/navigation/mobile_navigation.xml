@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_edit_text">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.materialdesignapp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
+        android:id="@+id/nav_edit_text"
+        android:name="com.example.materialdesignapp.ui.edittext.EditTextFragment"
+        android:label="@string/menu_edit_text"
+        tools:layout="@layout/fragment_edit_text">
 
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
@@ -17,12 +17,12 @@
     </fragment>
     <fragment
         android:id="@+id/nav_home_second"
-        android:name="com.example.materialdesignapp.ui.home.HomeSecondFragment"
+        android:name="com.example.materialdesignapp.ui.edittext.HomeSecondFragment"
         android:label="@string/home_second"
         tools:layout="@layout/fragment_home_second">
         <action
             android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
+            app:destination="@id/nav_edit_text" />
 
         <argument
             android:name="myArg"
@@ -31,13 +31,18 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.materialdesignapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="com.example.materialdesignapp.ui.snackbar.SnackBarFragment"
+        android:label="@string/menu_snack_bar"
+        tools:layout="@layout/fragment_snack_bar" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.materialdesignapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.example.materialdesignapp.ui.bottomsheet.BottomSheetFragment"
+        android:label="@string/menu_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" />
+    <fragment
+        android:id="@+id/nav_buttons"
+        android:name="com.example.materialdesignapp.ui.buttons.ButtonsFragment"
+        android:label="@string/menu_buttons"
+        tools:layout="@layout/fragment_buttons" />
 </navigation>

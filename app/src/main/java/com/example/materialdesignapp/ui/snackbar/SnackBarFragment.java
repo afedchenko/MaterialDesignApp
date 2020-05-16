@@ -1,4 +1,4 @@
-package com.example.materialdesignapp.ui.gallery;
+package com.example.materialdesignapp.ui.snackbar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,15 +17,15 @@ import com.example.materialdesignapp.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-public class GalleryFragment extends Fragment {
+public class SnackBarFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private SnackBarViewModel galleryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+                ViewModelProviders.of(this).get(SnackBarViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_snack_bar, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
         galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
