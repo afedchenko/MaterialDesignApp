@@ -1,51 +1,51 @@
-package com.example.materialdesignapp.ui.progressbar.progressbar;
+package com.example.materialdesignapp.ui.progressbar;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.example.materialdesignapp.R;
-import com.example.materialdesignapp.ToolbarBackActivity;
-import com.example.materialdesignapp.ui.edittext.EditTextViewModel;
 
 public class ProgressbarFragment extends Fragment {
 
-    private EditTextViewModel buttonsViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        buttonsViewModel =
-                ViewModelProviders.of(this).get(EditTextViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_buttons, container, false);
-        Button buttonForToolbarActivity = root.findViewById(R.id.fragment_buttons_button_1);
-        buttonForToolbarActivity.setOnClickListener(new View.OnClickListener() {
+
+        //Инфлейтим фрагмент с прогресс-барами и инициализируем views
+        View root = inflater.inflate(R.layout.fragment_progressbar, container, false);
+        Button buttonShowProgress = root.findViewById(R.id.fragment_progressbar_button_show);
+        Button buttonHideProgress = root.findViewById(R.id.fragment_progressbar_button_hide);
+        final ProgressBar roundProgressBar = root.findViewById(R.id.fragment_progressbar_progress_round);
+        final ProgressBar lineProgressBar = root.findViewById(R.id.fragment_progressbar_progress_line);
+
+        //Устанавливаем дефолтно прогрессбары скрытыми
+        roundProgressBar.setVisibility(View.INVISIBLE);
+        lineProgressBar.setVisibility(View.INVISIBLE);
+
+        //По клику на кнопку SHOW делаем прогрессбары видимыми
+        buttonShowProgress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ProgressbarFragment.this.startActivity(new Intent(ProgressbarFragment.this.getContext(), ToolbarBackActivity.class));
+                roundProgressBar.setVisibility(View.VISIBLE);
+                lineProgressBar.setVisibility(View.VISIBLE);
             }
         });
 
-
-/*        final TextView textView = root.findViewById(R.id.edit_text);
-        buttonsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        //По клику на кнопку HIDE делаем прогрессбары скрытыми
+        buttonHideProgress.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View v) {
+                roundProgressBar.setVisibility(View.INVISIBLE);
+                lineProgressBar.setVisibility(View.INVISIBLE);
             }
-        });*/
-        return root;
-    }
+        });
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        return root;
     }
 }

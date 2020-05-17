@@ -40,9 +40,16 @@
         android:name="com.example.materialdesignapp.ui.bottomsheet.BottomSheetFragment"
         android:label="@string/menu_bottom_sheet"
         tools:layout="@layout/fragment_bottom_sheet" />
+
     <fragment
         android:id="@+id/nav_buttons"
         android:name="com.example.materialdesignapp.ui.buttons.ButtonsFragment"
         android:label="@string/menu_buttons"
         tools:layout="@layout/fragment_buttons" />
+
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="com.example.materialdesignapp.ui.progressbar.ProgressbarFragment"
+        android:label="@string/menu_progress"
+        tools:layout="@layout/fragment_progressbar" />
 </navigation>
