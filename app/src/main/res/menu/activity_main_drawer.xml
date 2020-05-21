@@ -24,5 +24,9 @@
             android:id="@+id/nav_progress"
             android:icon="@drawable/ic_menu_progress"
             android:title="@string/menu_progress" />
+        <item
+            android:id="@+id/nav_fab_behavior"
+            android:icon="@drawable/ic_menu_fab_behavior"
+            android:title="@string/menu_fab_behavior" />
     </group>
 </menu>

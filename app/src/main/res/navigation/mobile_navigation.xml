@@ -52,4 +52,10 @@
         android:name="com.example.materialdesignapp.ui.progressbar.ProgressbarFragment"
         android:label="@string/menu_progress"
         tools:layout="@layout/fragment_progressbar" />
+
+    <fragment
+        android:id="@+id/nav_fab_behavior"
+        android:name="com.example.materialdesignapp.ui.fab_behavior.FabBehaviorFragment"
+        android:label="@string/menu_fab_behavior"
+        tools:layout="@layout/fragment_fab_behavior" />
 </navigation>
