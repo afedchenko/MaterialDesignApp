@@ -35,7 +35,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public int getItemCount() {
-        return list.size();
+//        return list.size();
+        return Integer.MAX_VALUE;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -50,7 +51,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         }
 
         public void bind(int position) {
-            textView.setText(list.get(position));
+            textView.setText(list.get(position % list.size()));
+//            textView.setText(list.get(position));
             switch (position % 6) {
                 case 0:
                     imageView.setImageResource(R.drawable.monster1);
