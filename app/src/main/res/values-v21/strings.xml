@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_first_group">Первая группа</string>
+    <string name="menu_second_group">Вторая группа</string>
+</resources>

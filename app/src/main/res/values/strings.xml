@@ -16,10 +16,13 @@
     <string name="menu_buttons">Buttons and collapsing</string>
     <string name="menu_progress">ProgressBar</string>
     <string name="menu_fab_behavior">FAB behavior</string>
+    <string name="menu_first_group">Первая группа</string>
+    <string name="menu_second_group">Вторая группа</string>
 
     <!--Тексты на разных view-->
     <string name="home_second">Home Second</string>
-    <string name="edit_text_hint">Some text</string>
+    <string name="edit_text_email">Email</string>
+    <string name="edit_text_password">Passord</string>
     <string name="bottom_sheet_text">Потяни вверх</string>
     <string name="flat_button_text_view">Flat buttons example</string>
     <string name="raised_button_text_view">Raised buttons example</string>

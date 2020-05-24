@@ -12,21 +12,29 @@
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_shack_bar"
             android:title="@string/menu_snack_bar" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_bottom_sheet"
-            android:title="@string/menu_bottom_sheet" />
-        <item
-            android:id="@+id/nav_buttons"
-            android:icon="@drawable/ic_menu_buttons"
-            android:title="@string/menu_buttons" />
-        <item
-            android:id="@+id/nav_progress"
-            android:icon="@drawable/ic_menu_progress"
-            android:title="@string/menu_progress" />
-        <item
-            android:id="@+id/nav_fab_behavior"
-            android:icon="@drawable/ic_menu_fab_behavior"
-            android:title="@string/menu_fab_behavior" />
     </group>
+    <item android:title="@string/menu_first_group">
+        <menu>
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_menu_bottom_sheet"
+                android:title="@string/menu_bottom_sheet" />
+            <item
+                android:id="@+id/nav_buttons"
+                android:icon="@drawable/ic_menu_buttons"
+                android:title="@string/menu_buttons" />
+        </menu>
+    </item>
+    <item android:title="@string/menu_second_group">
+        <menu>
+            <item
+                android:id="@+id/nav_progress"
+                android:icon="@drawable/ic_menu_progress"
+                android:title="@string/menu_progress" />
+            <item
+                android:id="@+id/nav_fab_behavior"
+                android:icon="@drawable/ic_menu_fab_behavior"
+                android:title="@string/menu_fab_behavior" />
+        </menu>
+    </item>
 </menu>
