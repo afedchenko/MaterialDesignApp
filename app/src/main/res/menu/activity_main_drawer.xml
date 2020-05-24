@@ -35,6 +35,10 @@
                 android:id="@+id/nav_fab_behavior"
                 android:icon="@drawable/ic_menu_fab_behavior"
                 android:title="@string/menu_fab_behavior" />
+            <item
+                android:id="@+id/nav_recycler"
+                android:icon="@drawable/ic_menu_recycler"
+                android:title="@string/menu_recycler" />
         </menu>
     </item>
 </menu>

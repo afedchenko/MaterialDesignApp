@@ -2,9 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_edit_text"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:padding="@dimen/edit_text_padding"
     tools:context=".ui.edittext.EditTextFragment">
 
@@ -16,7 +20,7 @@
         app:counterOverflowTextAppearance="@style/CounterStyle"
         app:errorEnabled="true">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +34,7 @@
         app:errorEnabled="true"
         app:passwordToggleEnabled="true">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/edit_text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

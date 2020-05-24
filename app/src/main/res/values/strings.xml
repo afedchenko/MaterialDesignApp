@@ -18,6 +18,7 @@
     <string name="menu_fab_behavior">FAB behavior</string>
     <string name="menu_first_group">Первая группа</string>
     <string name="menu_second_group">Вторая группа</string>
+    <string name="menu_recycler">RecyclerView</string>
 
     <!--Тексты на разных view-->
     <string name="home_second">Home Second</string>
