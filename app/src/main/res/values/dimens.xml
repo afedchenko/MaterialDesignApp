@@ -8,4 +8,7 @@
     <dimen name="edit_text_padding">8dp</dimen>
     <dimen name="buttons_padding">8dp</dimen>
     <dimen name="toolbar_height">250dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_regular">16sp</dimen>
 </resources>

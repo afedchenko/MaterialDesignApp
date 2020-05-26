@@ -58,4 +58,9 @@
         android:name="com.example.materialdesignapp.ui.fab_behavior.FabBehaviorFragment"
         android:label="@string/menu_fab_behavior"
         tools:layout="@layout/fragment_fab_behavior" />
+    <fragment
+        android:id="@+id/nav_recycler"
+        android:name="com.example.materialdesignapp.ui.recyclerview.RecyclerViewFragment"
+        android:label="@string/menu_recycler"
+        tools:layout="@layout/fragment_recycler_view" />
 </navigation>
