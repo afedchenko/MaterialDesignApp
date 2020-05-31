@@ -10,20 +10,23 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.example.materialdesignapp.R;
 import com.example.materialdesignapp.ToolbarBackActivity;
-import com.example.materialdesignapp.ui.edittext.EditTextViewModel;
 
 public class ButtonsFragment extends Fragment {
 
-    private EditTextViewModel buttonsViewModel;
+    public static ButtonsFragment newInstance(Bundle bundle) {
+        ButtonsFragment currentFragment = new ButtonsFragment();
+        Bundle args = new Bundle();
+        args.putBundle("gettedArgs", bundle);
+        currentFragment.setArguments(args);
+        return currentFragment;
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        buttonsViewModel =
-                ViewModelProviders.of(this).get(EditTextViewModel.class);
+
         View root = inflater.inflate(R.layout.fragment_buttons, container, false);
         Button buttonForToolbarActivity = root.findViewById(R.id.fragment_buttons_button_1);
         buttonForToolbarActivity.setOnClickListener(new View.OnClickListener() {
@@ -33,14 +36,6 @@ public class ButtonsFragment extends Fragment {
             }
         });
 
-
-/*        final TextView textView = root.findViewById(R.id.edit_text);
-        buttonsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });*/
         return root;
     }
 

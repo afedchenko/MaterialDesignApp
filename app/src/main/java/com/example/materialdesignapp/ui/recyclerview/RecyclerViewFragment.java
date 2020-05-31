@@ -27,8 +27,8 @@ public class RecyclerViewFragment extends Fragment {
 //        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
         RecyclerViewModel data = new RecyclerViewModel();
-        MyAdapter myAdapter = new MyAdapter(data.getList());
-        recyclerView.setAdapter(myAdapter);
-        recyclerView.addItemDecoration(new ItemDivider(root.getContext()));
+        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(data.getList());
+        recyclerView.setAdapter(recyclerViewAdapter);
+        //recyclerView.addItemDecoration(new ItemDivider(root.getContext()));
     }
 }

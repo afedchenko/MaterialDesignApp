@@ -14,6 +14,14 @@ import com.example.materialdesignapp.R;
 
 public class ProgressbarFragment extends Fragment {
 
+        public static ProgressbarFragment newInstance(Bundle bundle) {
+        ProgressbarFragment currentFragment = new ProgressbarFragment();
+        Bundle args = new Bundle();
+        args.putBundle("gettedArgs", bundle);
+        currentFragment.setArguments(args);
+        return currentFragment;
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 

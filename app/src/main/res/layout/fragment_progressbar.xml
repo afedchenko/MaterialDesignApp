@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="@dimen/layout_padding_top"
     android:orientation="vertical"
     tools:context=".ui.progressbar.ProgressbarFragment">
 
@@ -13,6 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorAccent"
+        android:layout_marginStart="16dp"
         android:layout_margin="@dimen/buttons_padding"/>
 
     <Button

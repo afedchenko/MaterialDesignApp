@@ -9,14 +9,14 @@
             android:icon="@drawable/ic_menu_edit_text"
             android:title="@string/menu_edit_text" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_fab"
             android:icon="@drawable/ic_menu_shack_bar"
             android:title="@string/menu_snack_bar" />
     </group>
     <item android:title="@string/menu_first_group">
         <menu>
             <item
-                android:id="@+id/nav_slideshow"
+                android:id="@+id/nav_bottom_sheet"
                 android:icon="@drawable/ic_menu_bottom_sheet"
                 android:title="@string/menu_bottom_sheet" />
             <item
@@ -39,6 +39,15 @@
                 android:id="@+id/nav_recycler"
                 android:icon="@drawable/ic_menu_recycler"
                 android:title="@string/menu_recycler" />
+            <item
+                android:id="@+id/nav_tabs"
+                android:icon="@drawable/ic_menu_tabs"
+                android:title="@string/menu_tabs_activity" />
+            <item
+                android:id="@+id/nav_bottom_menu"
+                android:icon="@drawable/ic_menu_bottom"
+                android:title="@string/menu_bottom_menu" />
         </menu>
     </item>
+    <item android:title=""/>
 </menu>
