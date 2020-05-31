@@ -19,6 +19,12 @@
     <string name="menu_first_group">Первая группа</string>
     <string name="menu_second_group">Вторая группа</string>
     <string name="menu_recycler">RecyclerView</string>
+    <string name="menu_tabs_activity">Tabs</string>
+
+    <!--Названия табов-->
+    <string name="TabEditText">EditText</string>
+    <string name="TabButtons">Buttons</string>
+    <string name="TabProgress">Progress</string>
 
     <!--Тексты на разных view-->
     <string name="home_second">Home Second</string>
@@ -37,14 +43,14 @@
 
     <!--Тексты для collapsing_activity-->
     <string name="big_text">
-    Руслан и Людмила
-    Посвящение\n
-    Для вас, души моей царицы,\n
-    Красавицы, для вас одних\n
-    Времен минувших небылицы,\n
-    В часы досугов золотых,\n
-    Под шепот старины болтливой,\n
-    Рукою верной я писал;\n
+        Руслан и Людмила\n
+        Посвящение\n
+        Для вас, души моей царицы,\n
+        Красавицы, для вас одних\n
+        Времен минувших небылицы,\n
+        В часы досугов золотых,\n
+        Под шепот старины болтливой,\n
+        Рукою верной я писал;\n
     Примите ж вы мой труд игривый!\n
     Ничьих не требуя похвал,\n
     Счастлив уж я надеждой сладкой,\n

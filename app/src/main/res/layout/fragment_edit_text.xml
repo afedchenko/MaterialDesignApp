@@ -9,12 +9,13 @@
     android:clickable="true"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    android:padding="@dimen/edit_text_padding"
+    android:paddingTop="@dimen/layout_padding_top"
     tools:context=".ui.edittext.EditTextFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/edit_text_padding"
         app:counterEnabled="true"
         app:counterMaxLength="10"
         app:counterOverflowTextAppearance="@style/CounterStyle"
@@ -30,6 +31,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/edit_text_padding"
         app:counterOverflowTextAppearance="@style/CounterStyle"
         app:errorEnabled="true"
         app:passwordToggleEnabled="true">

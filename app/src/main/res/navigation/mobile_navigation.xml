@@ -30,13 +30,13 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_fab"
         android:name="com.example.materialdesignapp.ui.snackbar.SnackBarFragment"
         android:label="@string/menu_snack_bar"
         tools:layout="@layout/fragment_snack_bar" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_bottom_sheet"
         android:name="com.example.materialdesignapp.ui.bottomsheet.BottomSheetFragment"
         android:label="@string/menu_bottom_sheet"
         tools:layout="@layout/fragment_bottom_sheet" />
@@ -63,4 +63,9 @@
         android:name="com.example.materialdesignapp.ui.recyclerview.RecyclerViewFragment"
         android:label="@string/menu_recycler"
         tools:layout="@layout/fragment_recycler_view" />
+    <fragment
+        android:id="@+id/nav_tabs"
+        android:name="com.example.materialdesignapp.ui.tabsactivity.TabsActivityFragment"
+        android:label="@string/menu_tabs_activity"
+        tools:layout="@layout/fragment_tabs_activity" />
 </navigation>

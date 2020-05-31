@@ -24,6 +24,14 @@ public class EditTextFragment extends Fragment {
 
     private EditTextViewModel homeViewModel;
 
+    public static EditTextFragment newInstance(Bundle bundle) {
+        EditTextFragment currentFragment = new EditTextFragment();
+        Bundle args = new Bundle();
+        args.putBundle("gettedArgs", bundle);
+        currentFragment.setArguments(args);
+        return currentFragment;
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =

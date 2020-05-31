@@ -13,11 +13,11 @@ import com.example.materialdesignapp.R;
 
 import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
     private List<String> list;
 
-    public MyAdapter(List<String> list) {
+    public RecyclerViewAdapter(List<String> list) {
         this.list = list;
     }
 
