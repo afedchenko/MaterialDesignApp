@@ -68,4 +68,9 @@
         android:name="com.example.materialdesignapp.ui.tabsactivity.TabsActivityFragment"
         android:label="@string/menu_tabs_activity"
         tools:layout="@layout/fragment_tabs_activity" />
+    <fragment
+        android:id="@+id/nav_bottom_menu"
+        android:name="com.example.materialdesignapp.ui.bottommenu.BottomMenuFragment"
+        android:label="@string/menu_bottom_menu"
+        tools:layout="@layout/fragment_bottom_menu" />
 </navigation>

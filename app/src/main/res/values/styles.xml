@@ -28,4 +28,9 @@
         <item name="colorControlActivated">#00BCD4</item>
     </style>
 
+    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorText</item>
+        <item name="android:textColorSecondary">@color/colorTabsNotActive</item>
+    </style>
+
 </resources>

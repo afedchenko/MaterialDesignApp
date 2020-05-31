@@ -43,6 +43,10 @@
                 android:id="@+id/nav_tabs"
                 android:icon="@drawable/ic_menu_tabs"
                 android:title="@string/menu_tabs_activity" />
+            <item
+                android:id="@+id/nav_bottom_menu"
+                android:icon="@drawable/ic_menu_bottom"
+                android:title="@string/menu_bottom_menu" />
         </menu>
     </item>
     <item android:title=""/>

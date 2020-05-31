@@ -20,6 +20,7 @@
     <string name="menu_second_group">Вторая группа</string>
     <string name="menu_recycler">RecyclerView</string>
     <string name="menu_tabs_activity">Tabs</string>
+    <string name="menu_bottom_menu">Bottom menu</string>
 
     <!--Названия табов-->
     <string name="TabEditText">EditText</string>
