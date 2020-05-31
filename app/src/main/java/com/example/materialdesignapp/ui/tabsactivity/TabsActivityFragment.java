@@ -30,7 +30,7 @@ public class TabsActivityFragment extends Fragment {
         tabsAdapter.addFragment(fragment2, getString(R.string.TabButtons));
         tabsAdapter.addFragment(fragment3, getString(R.string.TabProgress));
 
-        ViewPager viewPager = root.findViewById(R.id.view_pager);
+        ViewPager viewPager = root.findViewById(R.id.fragment_tabs_view_pager);
         viewPager.setAdapter(tabsAdapter);
         TabLayout tabs = root.findViewById(R.id.fragment_tabs_tab);
         tabs.setupWithViewPager(viewPager);
